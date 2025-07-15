@@ -1,12 +1,12 @@
 
-'use client'
+'use client';
 
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Autoplay, Pagination } from 'swiper/modules'
-import 'swiper/css'
-import 'swiper/css/pagination'
-import 'swiper/css/autoplay'
-import Image from 'next/image'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
+import Image from 'next/image';
 
 export default function TestimonialSlider() {
     const testimonials = [
@@ -75,18 +75,9 @@ export default function TestimonialSlider() {
                         pauseOnMouseEnter: true,
                     }}
                     breakpoints={{
-                        640: {
-                            slidesPerView: 1,
-                            spaceBetween: 32,
-                        },
-                        768: {
-                            slidesPerView: 2,
-                            spaceBetween: 32,
-                        },
-                        1024: {
-                            slidesPerView: 3,
-                            spaceBetween: 32,
-                        },
+                        640: { slidesPerView: 1, spaceBetween: 32 },
+                        768: { slidesPerView: 2, spaceBetween: 32 },
+                        1024: { slidesPerView: 3, spaceBetween: 32 },
                     }}
                     className="pb-12"
                 >
@@ -107,9 +98,6 @@ export default function TestimonialSlider() {
                                         {testimonial.text}
                                     </p>
                                 </div>
-                                import Image from 'next/image'; // ensure this is imported
-
-                                // ...
 
                                 <div className="flex items-center gap-5 border-t border-gray-700 pt-5">
                                     <Image
@@ -124,7 +112,6 @@ export default function TestimonialSlider() {
                                         <span className="text-sm text-gray-400">{testimonial.role}</span>
                                     </div>
                                 </div>
-
                             </div>
                         </SwiperSlide>
                     ))}
