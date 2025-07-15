@@ -39,7 +39,31 @@ const nextConfig: NextConfig = {
         hostname: 'flowbite.s3.amazonaws.com',
         port: '',
         pathname: '/blocks/marketing-ui/cta/**',
-      }
+      },
+      {
+        protocol: 'https',
+        hostname: 'd33wubrfki0l68.cloudfront.net',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.pexels.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.pixabay.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'pagedone.io',
+        port: '',
+        pathname: '/asset/uploads/**',
+      },
 
 
     ],

@@ -24,11 +24,10 @@ export default function Card() {
                     <p className="mb-6 text-gray-300 leading-relaxed font-normal text-sm sm:text-base">
                         Experience the convenience of coding directly in your browser with our
                         powerful code editor. No installations, no hassle – just pure coding
-                        freedom. Whether you're a beginner or an experienced developer, our
+                        freedom. Whether you&apos;re a beginner or an experienced developer, our
                         editor is designed to enhance your coding experience.
-
-
                     </p>
+
                 </div>
                 <Link
                     href="#"

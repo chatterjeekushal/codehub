@@ -2,6 +2,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import {
   Carousel,
   CarouselApi,
@@ -10,7 +11,7 @@ import {
 } from "@/components/ui/carousel";
 import { TextRoll } from "./ui/text-roll";
 
-// ✅ Reusable LogoItem component (responsive)
+// ✅ Reusable LogoItem component (Next.js Image optimized)
 interface LogoItemProps {
   src: string;
   alt?: string;
@@ -28,11 +29,13 @@ export const LogoItem: React.FC<LogoItemProps> = ({
     <div
       className={`relative flex items-center justify-center rounded-md p-2 md:p-4 transition-colors duration-300 ${containerClassName} hover:bg-gray-600`}
     >
-      <img
+      <Image
         src={src}
         alt={alt}
+        fill
         className={`object-contain filter invert transition duration-300 ${imageClassName}`}
         loading="lazy"
+        sizes="(max-width: 768px) 50vw, (max-width: 1200px) 20vw, 10vw"
       />
     </div>
   );
@@ -118,12 +121,11 @@ export const AnimatedCarousel: React.FC<AnimatedCarouselProps> = ({
               bg-clip-text 
               bg-gradient-to-r from-purple-400 to-pink-600 
               font-extrabold 
-              text-4xl  md:text-4xl lg:text-6xl 
+              text-4xl md:text-4xl lg:text-6xl 
               tracking-tight 
               max-w-6xl 
               leading-relaxed
               mb-6 sm:mb-8
-              
               p-4 sm:p-6 
               rounded-2xl 
               shadow-2xl 
@@ -148,7 +150,7 @@ export const AnimatedCarousel: React.FC<AnimatedCarouselProps> = ({
                     `}
                   >
                     <LogoItem
-                      src={typeof logo === "string" ? logo : logo}
+                      src={logo}
                       alt={`Logo ${index + 1}`}
                       containerClassName={`${logoContainerWidth} ${logoContainerHeight} ${logoClassName}`}
                       imageClassName={logoImageSizeClasses}
@@ -164,7 +166,7 @@ export const AnimatedCarousel: React.FC<AnimatedCarouselProps> = ({
   );
 };
 
-// ✅ Simplified wrapper for easy usage
+// ✅ Simple wrapper for easy usage
 export const Case1 = (props: AnimatedCarouselProps) => {
   return <AnimatedCarousel {...props} />;
 };

@@ -18,12 +18,11 @@ export default function Card() {
                         VS Code Shortcuts Unlock Your Coding Superpowers
                     </h4>
 
-                    <p className="mb-6  text-black leading-relaxed  font-sans sm:text-base">
+                    <p className="mb-6 text-black leading-relaxed font-sans sm:text-base">
                         Master the art of coding efficiency with our comprehensive guide to VS Code
-                        shortcuts. Whether you're a beginner or a seasoned developer, these tips will
+                        shortcuts. Whether you&apos;re a beginner or a seasoned developer, these tips will
                         help you navigate your code editor like a pro, saving you time and boosting
                         your productivity.
-
                     </p>
                 </div>
                 <Link

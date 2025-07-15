@@ -5,6 +5,7 @@ import React from 'react';
 import { Spotlight } from "../components/ui/Spotlight";
 import { BackgroundBeams } from "../components/ui/background-beams";
 import Link from "next/link";
+import Image from "next/image";
 
 const ComponentName = () => {
     const handleClick = () => {
@@ -15,10 +16,12 @@ const ComponentName = () => {
         <div className="relative bg-[#040916] w-full overflow-hidden">
             {/* Background Image */}
             <div className="absolute inset-0">
-                <img
+                <Image
                     className="w-full h-full object-cover opacity-10"
                     src="https://d33wubrfki0l68.cloudfront.net/1e0fc04f38f5896d10ff66824a62e466839567f8/699b5/images/hero/3/background-pattern.png"
                     alt="background pattern"
+                    width={1920}
+                    height={1080}
                 />
             </div>
 
@@ -44,11 +47,13 @@ const ComponentName = () => {
                                             "https://d33wubrfki0l68.cloudfront.net/b52fa09a115db3a80ceb2d52c275fadbf84cf8fc/7fd8a/images/hero/3/avatar-female-1.png",
                                             "https://d33wubrfki0l68.cloudfront.net/8a2efb13f103a5ae2909e244380d73087a9c2fc4/31ed6/images/hero/3/avatar-female-2.png"
                                         ].map((src, idx) => (
-                                            <img
+                                            <Image
                                                 key={idx}
                                                 className="inline-block rounded-full w-14 h-14 ring-2 ring-[#2a2d34]"
                                                 src={src}
                                                 alt={`avatar-${idx}`}
+                                                width={56}
+                                                height={56}
                                             />
                                         ))}
                                     </div>
@@ -95,10 +100,12 @@ const ComponentName = () => {
 
                         {/* Right Illustration */}
                         <div className="xl:col-span-3">
-                            <img
+                            <Image
                                 className="w-full mx-auto scale-110 rounded-lg"
                                 src="https://d33wubrfki0l68.cloudfront.net/29c501c64b21014b3f2e225abe02fe31fd8f3a5c/f866d/images/hero/3/illustration.png"
                                 alt="code feedback illustration"
+                                width={800}
+                                height={600}
                             />
                         </div>
                     </div>

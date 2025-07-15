@@ -2,6 +2,7 @@
 'use client';
 import React from 'react';
 import { Facebook, Twitter, Instagram, Github } from 'lucide-react';
+import Image from 'next/image';
 
 const Footer = () => {
     return (
@@ -10,10 +11,12 @@ const Footer = () => {
                 <div className="grid grid-cols-2 md:col-span-3 lg:grid-cols-6 gap-y-16 gap-x-12">
                     {/* Logo + Social */}
                     <div className="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
-                        <img
-                            className="w-auto h-9"
+                        <Image
                             src="https://cdn.rareblocks.xyz/collection/celebration/images/logo.svg"
                             alt="Company Logo"
+                            width={120} // adjust as needed
+                            height={36} // adjust as needed
+                            className="w-auto h-9"
                         />
                         <p className="text-base leading-relaxed mt-7">
                             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.

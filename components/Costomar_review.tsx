@@ -6,6 +6,7 @@ import { Autoplay, Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
+import Image from 'next/image'
 
 export default function TestimonialSlider() {
     const testimonials = [
@@ -106,13 +107,24 @@ export default function TestimonialSlider() {
                                         {testimonial.text}
                                     </p>
                                 </div>
+                                import Image from 'next/image'; // ensure this is imported
+
+                                // ...
+
                                 <div className="flex items-center gap-5 border-t border-gray-700 pt-5">
-                                    <img className="rounded-full h-10 w-10 object-cover" src={testimonial.image} alt="avatar" />
+                                    <Image
+                                        src={testimonial.image}
+                                        alt="avatar"
+                                        width={40}
+                                        height={40}
+                                        className="rounded-full h-10 w-10 object-cover"
+                                    />
                                     <div>
                                         <h5 className="text-gray-200 font-medium mb-1">{testimonial.name}</h5>
                                         <span className="text-sm text-gray-400">{testimonial.role}</span>
                                     </div>
                                 </div>
+
                             </div>
                         </SwiperSlide>
                     ))}

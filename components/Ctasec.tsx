@@ -19,9 +19,9 @@ export default function HeroSection() {
 
                         <Link
                             href="#"
-                            className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-[#e0e0e0] bg-black/80  rounded-lg hover:bg-gray-900 focus:ring-4 focus:ring-gray-100 dark:text-white dark:bg-transparent dark:border-white/40 dark:hover:bg-white/10 dark:focus:ring-white/20"
+                            className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-[#e0e0e0] bg-black/80 rounded-lg hover:bg-gray-900 focus:ring-4 focus:ring-gray-100 dark:text-white dark:bg-transparent dark:border-white/40 dark:hover:bg-white/10 dark:focus:ring-white/20"
                         >
-                            Try now it's free
+                            Try now it&apos;s free
                             <svg
                                 className="w-5 h-5 ml-2 -mr-1"
                                 fill="currentColor"
@@ -35,6 +35,7 @@ export default function HeroSection() {
                                 ></path>
                             </svg>
                         </Link>
+
                     </div>
                 </div>
 

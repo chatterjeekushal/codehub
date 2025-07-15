@@ -19,10 +19,10 @@ export default function Card() {
                     </h4>
                     <p className="mb-6 text-black leading-relaxed font-sans sm:text-base">
                         Master the art of coding efficiency with our comprehensive guide to VS Code shortcuts.
-                        Whether you're a beginner or a seasoned developer, these tips will help you navigate
+                        Whether you&apos;re a beginner or a seasoned developer, these tips will help you navigate
                         your code editor like a pro, saving you time and boosting your productivity.
-
                     </p>
+
                 </div>
                 <Link href="#" className="text-black font-semibold text-sm hover:underline flex items-center w-fit ">
                     Learn More
